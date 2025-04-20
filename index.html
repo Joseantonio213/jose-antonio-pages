@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>José Antonio | Assistência Técnica & Serviços</title>
+  <style>
+    
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #0a74da;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #004a99;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      background-color: #0a74da;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #005bb5;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>José Antonio</h1>
+    <p>Assistência Técnica | Segurança do Trabalho | Rifa Solidária</p>
+  </header>
+
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="container">
+    <section id="servicos" class="section">
+      <h2>Serviços</h2>
+      <ul>
+        <li>🔧 Manutenção de computadores e notebooks</li>
+        <li>📱 Conserto de celulares</li>
+        <li>🔍 Consulta veicular</li>
+        <li>🛡️ Técnico em Segurança do Trabalho</li>
+        <li>🎁 Rifa beneficente para festividades infantis</li>
+      </ul>
+    </section>
+
+    <section id="sobre" class="section">
+      <h2>Sobre mim</h2>
+      <p>Sou técnico em informática com experiência em assistência técnica e estou cursando Técnico em Segurança do Trabalho. Também realizo ações sociais como rifas beneficentes para a comunidade da minha igreja.</p>
+    </section>
+
+    <section id="contato" class="section">
+      <h2>Contato</h2>
+      <p>Entre em contato pelo WhatsApp ou clique no botão abaixo:</p>
+      <button class="btn" onclick="enviarMensagem()">Fale comigo</button>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 José Antonio - Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    function enviarMensagem() {
+      const numero = "559999999999"; // Substitua com seu número
+      const mensagem = "Olá, José Antonio! Tenho interesse em seus serviços.";
+      const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+      window.open(link, '_blank');
+    }
+  </script>
+
+</body>
+</html>
